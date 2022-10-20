@@ -1,37 +1,25 @@
 #include <stdio.h>
+
 /**
  * main - Fizz-Buzz test
- *
  * Return: void.
  */
-
 int main(void)
 {
-	int i = 1;
+	int n;
 
-	while (i <= 100)
+	printf("1");
+	for (n = 2; n <= 100; n++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else if (i % 3 == 0)
-		{
+		printf(" ");
+		if (n % 3 == 0)
 			printf("Fizz");
-		}
-		else
-		{
-			printf("%i", i);
-		}
-
-		if (i != 100)
-		{
-			putchar(' ');
-		}
-
-		i++;
+		if (n % 5 == 0)
+			printf("Buzz");
+		if (n % 3 != 0 && n % 5 != 0)
+			printf("%d", n);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 
 }
