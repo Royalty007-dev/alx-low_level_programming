@@ -8,7 +8,7 @@
  * Return: returns a pointer to the first occurence of c
  */
 char *_strchr(char *s, char c)
-{ 
+{
 	int i;
 
 	for (i = 0; 1 ; i++)
