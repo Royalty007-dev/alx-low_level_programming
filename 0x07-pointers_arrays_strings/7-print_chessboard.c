@@ -1,11 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * print_chessboard - prints a chessboard.
  * @a: The chessboard to be printed.
  */
-
 void print_chessboard(char (*a)[8])
 {
 	int indx1, indx2;
